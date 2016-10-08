@@ -1,0 +1,109 @@
+
+<div >
+	<div>
+		<ul class="breadcrumb">
+			<li class="completed"><a>Data Sista</a></li>
+			<li class="active"><a>Order Sista</a></li>
+			<li class="completed"><a>Data Bank</a></li>
+			
+		</ul>
+	</div>
+</div>
+<hr size="1">
+<center><h3>Order Sista</h3></center>
+<hr size="1">
+<br>
+<form>
+
+	
+	Nomor Order* :
+
+	<br>
+	
+	<div class="colfix w75">
+		<input type="text" placeholder="No Order Sista..">
+	</div>
+	<div class="colfix w25">
+	<center>
+		<a class="btn"> Load </a>
+	</center>
+	</div>
+
+	<div class="list-wrapper">
+
+    <?php 
+        for($x=1; $x<3; $x++) {
+            echo ''.
+            '<div class="list-item">'.
+            '<div class="cartbutton">'.
+	            '<div class="closebtn" id="cart-removebutton">
+	            	<a href="javascript:showMe(\'modal-alert\')">×</a>
+	            </div>'.
+            '</div>'.
+            '<div class="colfix w33">'.
+            '   <div class="imgbox"><img src="./assets/images/product'.$x.'.jpg"></div>'.
+            '</div>'.
+            '       <div class="colfix w66 product-info">'.  
+            '           <h3>'.$lipsum.'</h3>'.
+            '           <span class="harga">2.300.000</span>'.
+            '           <div class="colfix w50 order minorder">1090986xxx</div>'.
+                  '<div class="colfix w85">'.
+            '<br>'.
+			'          <center><small>Alasan Retur</small></center>' .
+			'				<select class="mb0">'.
+			'					<option value="0">-- Silakan Pilih -- </option>'.
+			'					<option>Bolong</option>'.
+			'					<option>Jahitan Tidak Rapi</option>'.
+			'					<option>Kebesaran</option>'.
+			'					<option>Kekecilan</option>'.
+			'				</select>'.
+			'<br>'.'<br>'.
+			'          <center><small>Bukti Foto</small></center>' .
+			'		</div>'.
+			'<div class="colfix w85">'.
+			          '<div class="fileUpload btn-upload btn-primary">
+					    <center><span>Upload</span></center>
+					    <input type="file" class="upload" />
+					</div>'.
+					'</div>'.
+            ' 		</div>'.
+			'</a>'.
+            '</div>';
+        }
+    ?>
+</div>
+
+<div class="wrapper">
+	
+ 
+
+	<hr size="1">
+	Biaya Kirim Balik
+	<br>
+	<input type="text" placeholder="Rp.9000">
+	Keterangan
+	<br>
+	<textarea placeholder="Keterangan.."></textarea>
+	Bukti Ongkir
+<br>
+	<div class="fileUpload btn-upload btn-primary">
+					    <center><span>Upload</span></center>
+					    <input type="file" class="upload" />
+	</div>
+
+	<hr size="1">
+	<br><br>
+	<center>
+		<a href="./?page=retur-page03" class="btn"> Selanjutnya </a>
+	</center>
+</form>
+
+<div class="bottom-space"></div>
+
+
+<!-- modal notif hapus item di cart-->
+<a onclick="hideMe(this);" class="modal alert hidden " id="modal-alert">
+    <h3>Sukses!</h3>
+    Item berhasil dihapus dari keranjang
+    <ico class="closeX"></ico>
+</a>
