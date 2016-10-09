@@ -42,7 +42,7 @@ h4 .step-number {display:inline-block; width:25px; line-height:25px; height:25px
 	body > form {padding:10px;}
 		form label {display: block; margin-bottom: 10px}
 	input[type=text], input[type=password], input[type=email], select, textarea, input[type=submit], input[type=button], button {font-size:13px; padding:0 10px;}
-	input[type=text], input[type=password], input[type=email], textarea, select {height:40px; width:100%; border:1px solid #e6e6e6; background-color:#F6F6F6; margin-bottom:10px; border-radius: 3px;}
+	input[type=text], input[type=password], input[type=email], textarea, select {height:40px; width:100%; border:1px solid #e6e6e6; background-color:#F6F6F6; margin: 2px 0px 20px;; border-radius: 3px;}
 		textarea {height:150px; padding:10px;}
 	.btn, input[type=submit], input[type=button], button {padding:12px 20px 13px; height:40px; width: 100%; border-radius: 3px; background:linear-gradient(rgb(222, 94, 94) 0%, rgb(215, 60, 60) 100%) rgb(215, 60, 60); color:#FFF; border:0; display: inline-block; box-sizing:border-box; line-height: 15px; margin-bottom: 5px; font-size: 13px}
 
